@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#19d1f8" >
+
+    <TextView
+        android:id="@+id/top_back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:drawableLeft="@drawable/back_bg_selector"
+        android:drawablePadding="-3.0dip"
+        android:gravity="center"
+      	android:text="返回"
+        android:textColor="@drawable/text_color"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="title"
+       
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large" />
+
+    <ImageView
+        android:id="@+id/top_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:contentDescription="@null"
+        android:src="@drawable/top_right_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/top_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:textColor="@color/white"
+        android:text="跳过"
+        android:padding="5dip"
+        android:visibility="gone"
+        android:background="@drawable/bg_btn_shape_login"
+        android:textSize="@dimen/sixteen" />
+
+</RelativeLayout>

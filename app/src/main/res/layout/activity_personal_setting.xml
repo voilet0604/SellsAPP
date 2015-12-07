@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical" >
+
+    
+    <com.sellsapp.basic.widget.TopBarView
+        android:id="@+id/bar"
+        style="@style/TopBarStyle"
+        android:layout_marginBottom="35dp"
+         />
+    <Button
+        android:id="@+id/message_btn"
+        android:layout_margin="6dp"
+       	style="@style/WhiteBtnStyle"
+        android:text="服务条款" />
+
+    <Button
+        android:id="@+id/pwd_change_btn"
+       	style="@style/WhiteBtnStyle"
+        android:layout_margin="6dp"
+        android:text="修改密码" />
+
+    <Button
+        android:id="@+id/update_check_btn"
+       	style="@style/WhiteBtnStyle"
+        android:layout_margin="6dp"
+        android:text="检查更新" />
+
+    <Button
+        android:id="@+id/about_us_btn"
+       	style="@style/WhiteBtnStyle"
+        android:layout_margin="6dp"
+        android:text="关于我们" />
+
+</LinearLayout>

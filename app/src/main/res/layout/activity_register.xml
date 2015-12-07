@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical" >
+
+    <com.sellsapp.basic.widget.TopBarView
+        android:id="@+id/bar"
+        style="@style/TopBarStyle" />
+
+    <com.sellsapp.basic.widget.BounceScrollView style="@style/BounceScrollViewStyle" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/login_username_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/bg_edittext_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/username_star"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <com.sellsapp.basic.widget.ClearEditText
+                    android:id="@+id/username_cet"
+                    style="@style/ClearEditText_Style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:hint="@string/please_input_username"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/bg_edittext_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/phone_code"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <com.sellsapp.basic.widget.ClearEditText
+                    android:id="@+id/register_code"
+                    style="@style/ClearEditText_Style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:inputType="phone" />
+
+                <com.sellsapp.basic.widget.SendValidateButton
+                    android:id="@+id/getcode_btn"
+                    style="@style/BlueBtnStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:padding="5dip"
+                    android:text="@string/get_verification_code"
+                    android:textSize="@dimen/sixteen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/bg_edittext_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/password_star"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <com.sellsapp.basic.widget.ClearEditText
+                    android:id="@+id/password_cet"
+                    style="@style/ClearEditText_Style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:hint="@string/pwd1"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/bg_edittext_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/confirm_password_star"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+                <com.sellsapp.basic.widget.ClearEditText
+                    android:id="@+id/confirmpassword_cet"
+                    style="@style/ClearEditText_Style"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:hint="@string/password_length"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <View style="@style/ViewLine" />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/WhiteBtnStyle"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dp"
+                android:text="@string/register" />
+        </LinearLayout>
+    </com.sellsapp.basic.widget.BounceScrollView>
+
+</LinearLayout>

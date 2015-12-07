@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sellsapp"
+    android:versionCode="2"
+    android:versionName="OBTPV02" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/titlebarstyle" >
+        <activity android:name="com.sellsapp.basic.MainActivity" >
+        </activity>
+        <activity android:name="com.sellsapp.home.BuyBookActivity" />
+        <activity android:name="com.sellsapp.home.SellBookActivity" />
+        <activity android:name="com.sellsapp.home.SearchActivity" />
+        <activity
+            android:name="com.sellsapp.home.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.sellsapp.home.BookInfoDetiActivity"
+            android:label="@string/title_activity_book_info_deti" >
+        </activity>
+        <activity android:name="com.sellsapp.welcome.WeclomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sellsapp.welcome.GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity android:name="com.sellsapp.personal.LoginActivity" >
+        </activity>
+        <activity android:name="com.sellsapp.personal.RegisterActivity" />
+        <activity android:name="com.sellsapp.personal.PersonalBuyActivity" />
+        <activity android:name="com.sellsapp.personal.PersonalSellActivity" />
+        <activity android:name="com.sellsapp.personal.PersonalSettingActivity" />
+        <activity android:name="com.sellsapp.personal.Aboutus" />
+        <activity android:name="com.sellsapp.personal.MessageRemanding" />
+        <activity android:name="com.sellsapp.personal.PwdChange" />
+        <activity android:name="com.sellsapp.personal.UpdataCheck" />
+        <activity android:name="com.sellsapp.message.TestActivity" />
+        <activity android:name="com.sellsapp.shoppingcart.CartItemActivity" />
+        <activity android:name="com.sellsapp.personal.PDeitActivity" />
+        <activity android:name="com.sellsapp.personal.SellDeitActivity" />
+        <activity android:name="com.sellsapp.personal.WebViewActivity" />
+        <activity android:name="com.sellsapp.message.chat.ChatMessageActivity" />
+        <activity android:name="com.sellsapp.message.MessageActivity" />
+
+        <service android:name="com.sellsapp.message.myServer" >
+        </service>
+        <service android:name="com.sellsapp.message.MyService" >
+        </service>
+
+        <receiver android:name="com.sellsapp.message.AlarmReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.sellsapp.home.UpAppActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <service android:name="com.sellsapp.service.UpAppService" />
+        <service android:name="com.sellsapp.tcp.service.TCPService" />
+    </application>
+
+</manifest>

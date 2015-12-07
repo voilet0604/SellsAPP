@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="65dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_01"
+            android:src="@drawable/point01"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            />
+        <ImageView 
+            android:id="@+id/iv_02"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/point02"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            />
+        <ImageView 
+            android:id="@+id/iv_03"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/point02"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            />
+        
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/I:/AndroidStudioProjects/app/src/main/res/layout/activity_guide.xml -->

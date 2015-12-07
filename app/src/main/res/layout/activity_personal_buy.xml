@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical" >
+    
+    <com.sellsapp.basic.widget.TopBarView
+        android:id="@+id/bar"
+        style="@style/TopBarStyle" />
+    
+    <LinearLayout 
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+             android:textColor="@color/black"
+             android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="序号"
+            />
+        <TextView 
+             android:textColor="@color/black"
+             android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="书名"
+            />
+        <TextView 
+             android:textColor="@color/black"
+             android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="价格(元)"
+            />
+    </LinearLayout>
+    <com.sellsapp.basic.widget.XListView
+        android:id="@+id/shop_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.sellsapp.basic.widget.XListView>
+</LinearLayout>

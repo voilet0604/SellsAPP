@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <com.sellsapp.basic.widget.TopBarView
+        android:id="@+id/bar"
+        style="@style/TopBarStyle" />
+
+    <Switch
+        android:id="@+id/msgacept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="82dp"
+        android:padding="10dp"
+        android:text="接受消息"
+        android:textColor="@color/black"
+        tools:ignore="NewApi" />
+
+    <Switch
+        android:id="@+id/msgpush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/msgacept"
+        android:padding="10dp"
+        android:text="接受推送消息？"
+        android:textColor="@color/black"
+        tools:ignore="NewApi" />
+
+</RelativeLayout><!-- From: file:/I:/AndroidStudioProjects/app/src/main/res/layout/messageremanding.xml -->

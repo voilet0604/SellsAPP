@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical" >
+
+    <com.sellsapp.basic.widget.BounceScrollView
+        android:id="@+id/bar"
+        style="@style/BounceScrollViewStyle" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <com.sellsapp.basic.widget.CircleImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="@dimen/margin_ten"
+                        android:src="@drawable/logout_head" />
+
+                    <LinearLayout
+                        android:id="@+id/mycenterinfo_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_ten"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/username_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/myby56_account"
+                            android:textColor="@color/commo_text_color" />
+
+                        <TextView
+                            android:id="@+id/userlevel_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/account_level"
+                            android:textColor="@color/commo_text_color" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/useraccount_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/account_balance"
+                                android:textColor="@color/commo_text_color" />
+
+                            <ProgressBar
+                                android:id="@+id/progress_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/successs_result_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dip"
+                        android:text="@string/personinfo"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/eighteen" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buyer"
+                style="@style/CommLinearLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_top_item_bg" >
+
+                <TextView
+                    style="@style/DrawableLeftTv"
+                    android:drawableLeft="@drawable/buyer_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/buyer"
+                    android:textSize="20sp" />
+
+                <ImageView style="@style/RightArrowIv" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_seller"
+                style="@style/CommLinearLayout"
+                android:background="@drawable/setting_center_selector" >
+
+                <TextView
+                    style="@style/DrawableLeftTv"
+                    android:drawableLeft="@drawable/seller_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/seller"
+                    android:textSize="20sp" />
+
+                <ImageView style="@style/RightArrowIv" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/ll_setting"
+                    style="@style/CommLinearLayout"
+                    android:background="@drawable/setting_bottom_selector" >
+
+                    <TextView
+                        style="@style/DrawableLeftTv"
+                        android:drawableLeft="@drawable/setting"
+                        android:gravity="center_vertical"
+                        android:text="@string/setting"
+                        android:textSize="20sp" />
+
+                    <ImageView style="@style/RightArrowIv" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_login_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_left_login"
+                    style="@style/BluesBtnStyle"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="@string/login" />
+
+                <Button
+                    android:id="@+id/btn_right_register"
+           			style="@style/WhiteBtnStyle"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="@string/register" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/YellowBtnStyle"
+                android:text="@string/exit_login"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.sellsapp.basic.widget.BounceScrollView>
+
+</LinearLayout><!-- From: file:/I:/AndroidStudioProjects/app/src/main/res/layout/personal_fragment.xml -->

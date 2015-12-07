@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical" >
+
+    <com.sellsapp.basic.widget.TopBarView
+        style="@style/TopBarStyle" 
+        android:id="@+id/bar"/>
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:id="@+id/toast_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:id="@+id/login_username_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_margin="10.0dip"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/bg_edittext_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="@string/username"
+                android:textSize="18.0sp" />
+
+            <com.sellsapp.basic.widget.ClearEditText
+                android:id="@+id/login_account_et"
+                android:inputType="phone"
+                style="@style/ClearEditText_Style"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:hint="@string/please_input_username" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/bg_edittext_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="@color/black"
+                android:text="@string/password"
+                android:textSize="18.0sp" />
+
+            <com.sellsapp.basic.widget.ClearEditText
+                android:id="@+id/login_password_cet"
+                style="@style/ClearEditText_Style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:hint="@string/please_input_password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_findpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10.0dip"
+            android:text="@string/forget_password"
+            android:textColor="@drawable/text_color_login"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/BluesBtnStyle"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/register_btn"
+            style="@style/WhiteBtnStyle"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/register" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/I:/AndroidStudioProjects/app/src/main/res/layout/activity_login.xml -->

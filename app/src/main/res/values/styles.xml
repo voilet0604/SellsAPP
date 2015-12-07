@@ -1,0 +1,123 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	<style name="TopBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+	<style name="WhiteBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/bg_btn_shape_register</item>
+        <item name="android:textColor">@color/by56_bg</item>
+        <item name="android:textSize">@dimen/twenty</item>
+    </style>
+    <style name="YellowBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/bg_btn_shape_yellow</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/twenty</item>
+    </style>
+    
+     <style name="BluesBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/bg_btn_shape_blue</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/twenty</item>
+    </style>
+    
+     <style name="ClearEditText_Style">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/by56_bg</item>
+        <item name="android:textSize">@dimen/eighteen</item>
+    </style>
+    
+    <style name="BounceScrollViewStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    
+    <style name="ViewLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    
+    <style name="CommTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:textSize">@dimen/eighteen</item>
+    </style>
+     <style name="BlueBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/bg_btn_shape_login</item>
+        <item name="android:layout_margin">10dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/twenty</item>
+    </style>
+    
+    <style name="CommLinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="DrawableLeftTv">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:drawablePadding">5.0dip</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:textSize">@dimen/sixteen</item>
+        <item name="android:textColor">@color/commo_text_color</item>
+    </style>
+    
+    <style name="RightArrowIv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:src">@drawable/choose_ico_1</item>
+    </style>
+    
+    <style name="drop_down_list_footer_font_style">
+        <item name="android:textColor">@color/drop_down_list_footer_font_color</item>
+        <item name="android:textSize">@dimen/drop_down_list_footer_font_size</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    <style name="drop_down_list_footer_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+    </style>
+    
+</resources>

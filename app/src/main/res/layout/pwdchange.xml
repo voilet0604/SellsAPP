@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige" >
+
+    <com.sellsapp.basic.widget.TopBarView
+        android:id="@+id/bar"
+        style="@style/TopBarStyle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="206dp"
+        android:layout_marginLeft="35dp"
+        android:text="新密码" />
+
+    <EditText
+        android:id="@+id/newpwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="输入新密码"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/newpwd"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newpwd2"
+        android:layout_alignRight="@+id/newpwd2"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newpwd"
+        android:layout_alignBottom="@+id/newpwd"
+        android:layout_alignRight="@+id/textView2"
+        android:text="新密码" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/newpwd2"
+        android:layout_below="@+id/newpwd2"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="36dp"
+        android:text="确认" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newpwd"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@+id/newpwd"
+        android:text="原密码" />
+
+    <EditText
+        android:id="@+id/oldpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/newpwd"
+        android:layout_alignRight="@+id/newpwd"
+        android:ems="10"
+        android:hint="请输入原密码"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oldpwd"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="14dp"
+        android:text="修改密码" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyView">
+        <attr name="mycolor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RectView">
+        <attr name="mBackground_color" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/msg_fragment"
+    android:background="@color/beige">
+
+    <com.sellsapp.basic.widget.TopBarView
+        android:id="@+id/bar"
+        style="@style/TopBarStyle" />
+    <com.sellsapp.basic.widget.XListView
+        android:id="@+id/messagelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.sellsapp.basic.widget.XListView>
+
+    <ImageView 
+        android:id="@+id/no"
+        android:visibility="gone"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_login"
+        />
+</LinearLayout>
